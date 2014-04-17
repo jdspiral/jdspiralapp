@@ -1,2 +1,21 @@
 /* Includes Variables and Baselines */
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+$light:				#fff!default;
+$body: 				#2c3e50;
+
+/* Variables */
 $body-bg:		#2c3e50; /* Midnight Blue */
+$text-color:    #fff;
+$font-family-base: lato;
+.center {
+	text-align: center;
+}
+
+/* Baseline */
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 2.1rem;
+	line-height: 3.4rem;
+}
