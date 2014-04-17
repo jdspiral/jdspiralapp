@@ -7,10 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<%= link_to "Home", root_path %>
-	<%= link_to "About", about_path %>
+<%= render 'layouts/header' %>
+<%= render 'layouts/carousel' %>
+<div class="container">
 
 <%= yield %>
+</div>
 
 </body>
 </html>
