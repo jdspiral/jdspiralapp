@@ -26,4 +26,15 @@ Jdspiralapp::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "jdspiral@gmail.com",
+    :password  => "JYZllBrwdDX4U7XyhLrrPg", # SMTP password is any valid API key
+    :authentication => 'plain', # Mandrill supports 'plain' or 'login'
+    :domain => 'localhost:3000', # your domain to identify your server when connecting
+  }
+  ActionMailer::Base.delivery_method = :smtp
 end
